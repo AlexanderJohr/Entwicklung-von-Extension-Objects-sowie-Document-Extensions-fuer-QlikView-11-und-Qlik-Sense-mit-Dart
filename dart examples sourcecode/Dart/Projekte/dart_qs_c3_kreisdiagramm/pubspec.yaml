@@ -1,0 +1,18 @@
+name: dart_qs_c3_kreisdiagramm
+version: 0.0.1
+description: |
+  A Qlik Sense Pie-Chart Extension Object.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  qlikview_qlik_sense_deployment:
+    path: ..\qlikview_qlik_sense_deployment\
+  qlikview_qlik_sense_extensions:
+    path: ..\qlikview_qlik_sense_extensions
+transformers:
+- $dart2js:
+    commandLineOptions: [--enable-enum]
+- qlikview_qlik_sense_deployment:
+    deploymentFolder: \\Server\Extensions\DartQsC3Kreisdiagramm
+    destinationScriptFile: DartQsC3Kreisdiagramm.js

@@ -1,0 +1,25 @@
+name: dart_download_arbeitsblatt_als_png
+version: 0.0.1
+description: |
+  An absolute bare-bones web app.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  async_await:
+    git: https://github.com/dart-lang/async_await.git
+  browser: any
+  qlikview_modify_source_map:
+    path: ..\qlikview_modify_source_map\
+  qlikview_qlik_sense_deployment:
+    path: ..\qlikview_qlik_sense_deployment\
+  qlikview_qlik_sense_extensions:
+    path: ..\qlikview_qlik_sense_extensions
+transformers:
+- async_await
+- $dart2js
+- qlikview_modify_source_map:
+    extensionName: DartDownloadArbeitsblattAlsPng
+    extensionType: document
+- qlikview_qlik_sense_deployment:
+    deploymentFolder: \\Server\Extensions\Document\DartDownloadArbeitsblattAlsPng
+    destinationScriptFile: Script.js
