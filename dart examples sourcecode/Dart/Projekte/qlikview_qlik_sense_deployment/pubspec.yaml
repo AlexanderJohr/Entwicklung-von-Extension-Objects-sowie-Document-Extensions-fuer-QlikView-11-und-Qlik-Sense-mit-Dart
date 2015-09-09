@@ -1,0 +1,5 @@
+name: qlikview_qlik_sense_deployment
+version: 0.0.1
+description: A library for deployment of QlikView and Qlik Sense extensions.
+dependencies:
+  barback: any

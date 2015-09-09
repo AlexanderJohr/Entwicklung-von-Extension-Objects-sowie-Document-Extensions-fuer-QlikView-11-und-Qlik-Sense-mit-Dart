@@ -1,0 +1,7 @@
+name: qlikview_qlik_sense_extensions
+description: >
+  A library for QlikView and Qlik Sense Extensions.
+version: 0.0.1
+transformers:
+- $dart2js:
+    commandLineOptions: [--enable-enum]
