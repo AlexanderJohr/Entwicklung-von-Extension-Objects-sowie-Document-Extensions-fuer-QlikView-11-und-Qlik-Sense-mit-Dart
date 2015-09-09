@@ -1,0 +1,8 @@
+{
+	"name": "DartQsC3Kreisdiagramm",
+	"description": "${name}",
+	"icon": "pie-chart",
+	"type": "visualization",
+	"version": 2,
+	"author": "Alexander Johr"
+}
