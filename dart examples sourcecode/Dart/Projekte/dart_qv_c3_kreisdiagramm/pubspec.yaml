@@ -1,0 +1,26 @@
+name: dart_qv_c3_kreisdiagramm
+version: 0.0.1
+description: |
+  A QlikView Pie-Chart Extension Object.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  async_await:
+    git: https://github.com/dart-lang/async_await.git
+  qlikview_modify_source_map:
+    path: ..\qlikview_modify_source_map\
+  qlikview_qlik_sense_deployment:
+    path: ..\qlikview_qlik_sense_deployment\
+  qlikview_qlik_sense_extensions:
+    path: ..\qlikview_qlik_sense_extensions
+transformers:
+- async_await
+- $dart2js:
+    commandLineOptions: [--enable-enum]
+- qlikview_modify_source_map:
+    extensionName: DartQvC3Kreisdiagramm
+    extensionType: object
+- qlikview_qlik_sense_deployment:
+    deploymentFolder: \\Server\Extensions\Objects\DartQvC3Kreisdiagramm
+    destinationScriptFile: Script.js
