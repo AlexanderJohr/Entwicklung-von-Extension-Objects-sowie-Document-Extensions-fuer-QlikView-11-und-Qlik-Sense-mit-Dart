@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionObject Label="C3 Kreisdiagramm"
+  Description="Ein simples Kreisdiagramm">
+
+  <!-- Dimension 0 - Feld der anzuzeigenden Entitaeten im Kreisdiagramm -->
+  <Dimension Initial="" />
+  <!-- Formel 0 - Formel der anzuzeigenden Werte im Kreisdiagramm -->
+  <Measurement Initial="" />
+  <!-- Parameter 0 - Auswahlbox zum Festlegen der Anzeige der Legende. -->
+  <Text Label="Show Legend" Type="checkbox" />
+
+  <!-- Initialisiere Dimension 0 mit Produktname -->
+  <Initiate Name="Chart.Dimension.0.Field" Value="Produkt" />
+  <!-- Initialisiere Formel 0 mit Produktmenge -->
+  <Initiate Name="Chart.Expression.0.0.Definition" Value="=Menge" />
+  <!-- Initialisiere Parameter 0 (Legende) mit false -->
+  <Initiate Name="Chart.Text.0.Content" Value="0" />
+
+  <PropertiesPage Version="11" File="Properties.qvpp" />
+</ExtensionObject>

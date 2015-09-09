@@ -1,0 +1,19 @@
+﻿///$tab Main
+SET ThousandSep='.';
+SET DecimalSep=',';
+SET MoneyThousandSep='.';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='#.##0,00 €;-#.##0,00 €';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD.MM.YYYY';
+SET TimestampFormat='DD.MM.YYYY hh:mm:ss[.fff]';
+SET MonthNames='Jan;Feb;Mrz;Apr;Mai;Jun;Jul;Aug;Sep;Okt;Nov;Dez';
+SET DayNames='Mo;Di;Mi;Do;Fr;Sa;So';
+
+Produkte:
+load * inline
+[ Produkt, Menge,
+  Apfel, 2,
+  Birne, 3,
+  Erdbeere, 7
+];
